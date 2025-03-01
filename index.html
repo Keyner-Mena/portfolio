@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Keyner Mena</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="icon" type="image/png" href="./images/Icon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link hover:underline" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link redirect" name="about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link redirect" name="studies">Studies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link redirect" name="projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link redirect" name="skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link redirect" name="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <main class="p-8 relative z-10">
+        <!-- Welcome section -->
+        <section id="hero" class="text-center py-16 bg-gray-100">
+          <h1 class="text-4xl font-bold" id="typed-text"></h1>
+          <p class="mt-4">Computer Engineer • Cartago • Costa Rica</p>
+          <br />
+          <a id="btn-more" class="btn button redirect" name="about">
+            See more
+          </a>
+        </section>
+
+        <!-- About me section -->
+        <section id="about" class="my-16 flex terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Section</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
+          </div>
+          <div class="text-block">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <p class="subtittle">
+              <img class="logo" src="./images/graduate.png" alt="" /> Graduated
+              in Computer Engineering
+            </p>
+            <br />
+            <p class="mt-4">
+              Hi! I'm Keyner Mena, I got into this area in 2020, when I started
+              learning the basics of web development in high school. Since then,
+              I have discovered that I like software development and design. I
+              consider myself a passionate developer with a love for coding and
+              learning.
+              <br />
+              <br />
+              And now that I have finished my degree in Computer Engineering I'm
+              seeking opportunities to collaborate on resolving problems related
+              to software development on where I can apply skills as critical
+              thinking, teamwork, creativity, problem solving...
+            </p>
+            <br />
+            <a
+              id="btn-resume"
+              class="neon-button"
+              href="https://drive.google.com/file/d/1t7TdrUuE6jqTyrf8q0FlLQEQullRBp8S/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+            >
+              View resume
+              <img class="logo" src="./images/open.png" alt="open-icon" />
+            </a>
+          </div>
+          <div class="info">
+            <img
+              id="photo"
+              src="./images/photo.jpg"
+              alt="photo"
+              class="photo"
+            />
+            <a class="neon-button" href="" target="_blank" rel="noopener">
+              View resume
+              <img class="logo" src="./images/open.png" alt="open-icon" />
+            </a>
+          </div>
+        </section>
+
+        <!-- Studies section -->
+        <section id="studies" class="my-16 terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Section</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold">Academic training</h2>
+          <h5 class="text-2xl section-header">
+            The main degrees/certificates that I have are:
+          </h5>
+          <br />
+          <br />
+          <p class="subtittle">
+            <img class="logo" src="./images/clicking.png" alt="" />Click on them
+            for more details
+          </p>
+
+          <!-- Studies cards -->
+          <div class="studies_cards">
+            <div class="studies_card">
+              <div class="icon">
+                <img class="logo" src="./images/student.png" alt="" />
+              </div>
+              <strong> Bachelor's Degree in Computer Engineering </strong>
+              <div class="studies_card_body">
+                Universidad Florencio del Castillo
+              </div>
+              <span>Completed on: Dec, 2024</span>
+            </div>
+
+            <div class="studies_card">
+              <div class="icon">
+                <img class="logo" src="./images/certificate.png" alt="" />
+              </div>
+              <strong> Web development: HTML, CSS </strong>
+              <div class="studies_card_body">Platform: Google Activate</div>
+              <span>Completed on: Oct, 2024</span>
+            </div>
+
+            <div class="studies_card">
+              <div class="icon">
+                <img class="logo" src="./images/certificate.png" alt="" />
+              </div>
+              <strong> Certificate course in Python </strong>
+              <div class="studies_card_body">Platform: Kaggle Learn</div>
+              <span>Completed on: Feb, 2025</span>
+            </div>
+
+            <div class="studies_card">
+              <div class="icon">
+                <img class="logo" src="./images/language-learning.png" alt="" />
+              </div>
+              <strong> Linguistic proficiency in English </strong>
+              <div class="studies_card_body">Universidad de Costa Rica</div>
+              <span>Completed on: Oct, 2021</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="my-16 terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Section</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
+          </div>
+          <h2 class="text-2xl font-bold">My Projects</h2>
+          <h5 class="text-2xl section-header">Personal projects</h5>
+          <div class="mt-5">
+            <p>
+              I have experience in the development of apps/websites and I've
+              dedicated myself to a variety of intriguing projects that span
+              different domains and also technologies. Here are some of the
+              projects I’ve been working on. Feel free to explore them on my
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/Keyner-Mena"
+                >GitHub profile</a
+              >
+              for a closer look at the code and documentation :)
+            </p>
+
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <p class="advice">
+                <img class="logo" src="./images/swap.png" alt="" />
+                <strong>Scroll sideways to see more</strong>
+              </p>
+              <div class="carousel-inner" id="carousel-content">
+                <!-- Cards will be here-->
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <hr />
+            <div class="item-hints">
+              <div class="hint" data-position="4">
+                <span class="hint-radius"></span>
+                <span class="hint-dot">!</span>
+                <div class="hint-content do--split-children">
+                  <p>
+                    All the content of the repositories is in Spanish for the
+                    moment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="my-16 terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Section</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
+          </div>
+          <h2 class="text-2xl font-bold">My Skills</h2>
+          <h5 class="text-2xl section-header">These are my main skills:</h5>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="skills-content">
+                <h3 class="mt-4">Frontend</h3>
+                <hr />
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/html.png" alt="" />
+                    HTML
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/css.png" alt="" />
+                    CSS
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/js.png" alt="" />
+                    JavaScript
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/angular.png" alt="" />
+                    Angular
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/bootstrap.png" alt="" />
+                    Bootstrap
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="skills-content">
+                <h3 class="mt-4">Backend</h3>
+                <hr />
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/python.png" alt="" /> Python
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/php.png" alt="" />PHP
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/java.png" alt="" />Java
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/c-sharp.png" alt="" />C#
+                  </li>
+                  <li class="list-group-item">
+                    <img
+                      class="logo"
+                      src="./images/visual-basic.png"
+                      alt=""
+                    />Visual Basic
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="skills-content">
+                <h3 class="mt-4">Tools</h3>
+                <hr />
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/git.png" alt="" />
+                    Git
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/postman.png" alt="" />
+                    Postman
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/figma.png" alt="" />
+                    Figma
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/docker.png" alt="" />
+                    Docker
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="skills-content">
+                <h3 class="mt-4">Databases</h3>
+                <hr />
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/mysql.png" alt="" />
+                    MySQL
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/sql-server.png" alt="" />
+                    SQL Server
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/sqldeveloper.png" alt="" />
+                    SQL Developer
+                  </li>
+                  <li class="list-group-item">
+                    <img class="logo" src="./images/phpmyadmin.png" alt="" />
+                    PHPMyAdmin
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--  Contact Section -->
+        <section id="contact" class="my-16 terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Section</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
+          </div>
+          <div id="contact-text">
+            <h2 class="text-2xl font-bold">Contact Me</h2>
+            <h5 class="text-2xl section-header">You can contact me at:</h5>
+
+            <br />
+
+            <p>Gmail</p>
+            <a
+              href="mailto:keynermena896@gmail.com"
+              target="_blank"
+              class="neon-button"
+            >
+              <img src="./images/gmail.png" alt="Gmail Logo" class="logo" />
+              Send a e-mail
+            </a>
+
+            <br />
+            <br />
+
+            <p>LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/in/keyner-mena"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="neon-button"
+            >
+              <img
+                src="./images/linkedin.png"
+                alt="LinkedIn Logo"
+                class="logo"
+              />
+              My profile
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="text-center py-4 bg-gray-800 text-white relative z-10">
+      <p>&copy; 2025 Keyner Mena C.</p>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./scripts/particles-config.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Typed Text -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./scripts/functions.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  </body>
+</html>
