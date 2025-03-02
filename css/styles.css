@@ -69,7 +69,7 @@ main {
 /* Text color effect */
 .text-color,
 .text-2xl {
-  background: linear-gradient(to right, #aeaaaa, #a9a7a7);
+  background: linear-gradient(to right, #aeaaaa, #bdbcbc);
   -webkit-background-clip: text !important;
   background-clip: text !important;
   color: transparent;
@@ -282,6 +282,7 @@ section {
 /* Academic Training section*/
 .subtittle .logo {
   margin: 7px;
+  margin-left: 1px;
 }
 
 .studies_cards {
@@ -702,7 +703,7 @@ body::-ms-scrollbar-thumb {
   }
 
   .item-hints .hint-dot {
-    width: 2em;
+    width: 1.7em;
     height: 1.5em;
     transform: translate(-0%, -6%) scale(0.95);
   }
@@ -734,7 +735,7 @@ body::-ms-scrollbar-thumb {
   }
 
   #hero {
-    padding: 23rem 0;
+    padding: 21rem 0;
   }
 
   #typed-text,
@@ -866,6 +867,10 @@ body::-ms-scrollbar-thumb {
   .background-card {
     width: 27rem !important;
   }
+
+  .item-hints .hint-dot {
+    width: 2.5em;
+  }
 }
 
 @media (max-width: 420px) {
@@ -885,6 +890,12 @@ body::-ms-scrollbar-thumb {
 
   .project-image {
     height: 200px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  #about .subtittle {
+    font-size: 1rem;
   }
 }
 
