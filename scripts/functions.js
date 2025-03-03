@@ -50,14 +50,15 @@ $(document).ready(function () {
 // Typed text
 var typed = new Typed("#typed-text", {
   strings: [
-    "Hi! Welcome to <span class='text-color'> my portfolio</span> ;)",
+    "Hi!",
     "Im <span class='text-color'> Keyner Mena</span>.",
     "A <span class='text-color'> Computer Engineer</span>.",
-    "So...",
+    "...",
+    "Welcome to <span class='text-color'> my portfolio</span> ;)",
   ],
   typeSpeed: 100,
   backSpeed: 50,
-  loop: true,
+  loop: false,
 });
 
 // Sections Animation
