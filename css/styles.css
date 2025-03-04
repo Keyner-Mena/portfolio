@@ -147,7 +147,7 @@ section {
 /* Terminal */
 .terminal-loader {
   font-family: "Courier New", Courier, monospace;
-  border: 0.1em solid #090909;
+  border: 1px solid #131313;
   background-color: #020202f9;
   box-shadow: 0 4px 10px rgba(70, 63, 63, 0.2);
   padding: 3em;
@@ -183,7 +183,7 @@ section {
   left: 0;
   right: 0;
   height: 1.5em;
-  background-color: #090909;
+  background-color: #0a0a0a;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding: 0 0.4em;
