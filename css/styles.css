@@ -374,6 +374,10 @@ section {
   display: none;
 }
 
+#advice_projects {
+  margin-bottom: 1.5rem;
+}
+
 #carouselExample {
   margin-top: 55px;
   margin-bottom: 40px;
@@ -389,7 +393,7 @@ section {
 }
 
 .background-card {
-  width: 40rem !important;
+  width: 39rem !important;
   height: auto;
   margin: 19px;
   padding: 6px;
@@ -494,7 +498,7 @@ section {
 .item-hints .hint {
   display: flex;
   width: auto;
-  margin-left: 10.4rem;
+  margin-left: 10rem;
 }
 
 .item-hints .hint-dot {

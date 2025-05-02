@@ -94,6 +94,7 @@ const cardsData = [
     img: "./images/interface-e-commerce.png",
     text: "This website is an e-commerce with a cafeteria theme, which includes sections/modules as: Welcome(Home), Menu, Shopping Cart, Billing and a comments/contact section.",
     link: "https://github.com/Keyner-Mena/Proyecto-Cafeteria.git",
+    demoLink: "https://keyner-mena.github.io/Proyecto-Cafeteria/",
   },
   {
     header: "Web with AJAX",
@@ -123,7 +124,7 @@ const cardsData = [
     technologies:
       "<li> <b> Python </b> </li> <li> <b> Flet (from Flutter) </b> </li> <li> <b> API </b> </li>",
     img: "./images/interface-pokedex.png",
-    text: "I made this application to learn how Flet works, and also integrate it in a asynchronous way to be able to make requests to an API like the <a href='https://pokeapi.co/'>PokeAPI</a> and display the info on screen as a pokedex.",
+    text: "I made this app to learn how Flet works, and integrate it in a asynchronous way to be able to make requests in the <a href='https://pokeapi.co/'>PokeAPI</a> and display the info on screen as a pokedex.",
     link: "https://github.com/Keyner-Mena/Pokedex-Python.git",
   },
   {
@@ -131,7 +132,7 @@ const cardsData = [
     technologies:
       "<li><b> ANGULAR </b></li> <li><b> Bootstrap </b></li> <li><b> PHP </b></li> <li><b> PHPMyAdmin </b></li>",
     img: "./images/interface-crud-angular.png",
-    text: "I built a CRUD integrated with PHP to manage the API that connects to a SQL DB. And then I integrate it with the Frontend by using ANGULAR. It also uses Bootstrap as other framework to the app.",
+    text: "I built a CRUD integrated with PHP to manage the API that connects to a SQL DB. And then I integrate it with the Frontend by using ANGULAR. It also uses Bootstrap as other framework.",
     link: "https://github.com/Keyner-Mena/CRUD-ANGULAR.git",
   },
   {
@@ -186,6 +187,22 @@ function generateCarousel(numOfItems) {
                           : "View repository"
                       }
                     </a>
+
+                    ${
+                      card.header === "E-Commerce"
+                        ? `  
+                        <a type="button" class="neon-button" href="${card.demoLink}" target="_blank" rel="noopener"> 
+                          <img
+                            src=
+                                "./images/web.png"
+                            alt="icon"
+                            class="logo"
+                          />
+                          Demo
+                        </a>
+                      `
+                        : ""
+                    }
                   </div>
                 </div>
               </div>
