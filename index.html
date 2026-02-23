@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -54,6 +54,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link redirect" name="studies">Studies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link redirect" name="experience">Experience</a>
             </li>
             <li class="nav-item">
               <a class="nav-link redirect" name="projects">Projects</a>
@@ -116,7 +119,7 @@
             <a
               id="btn-resume"
               class="neon-button"
-              href="https://drive.google.com/file/d/1t7TdrUuE6jqTyrf8q0FlLQEQullRBp8S/view?usp=sharing"
+              href="https://drive.google.com/file/d/1JC77rEgC2QuiPHeZw5OWoqn4BaCm8V9a/view?usp=drive_link"
               target="_blank"
               rel="noopener"
             >
@@ -203,6 +206,157 @@
               <strong> Linguistic proficiency in English </strong>
               <div class="studies_card_body">Universidad de Costa Rica</div>
               <span>Completed on: Oct, 2021</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience section -->
+        <section id="experience" class="my-16 terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Section</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold">Experience</h2>
+          <h5 class="text-2xl section-header">My professional journey:</h5>
+          <br />
+          <br />
+
+          <!-- Experience Timeline -->
+          <div class="timeline">
+            <div class="timeline-container left">
+              <div class="timeline-content">
+                <h3>Fullstack Developer Jr</h3>
+                <h5>J&G Solutions</h5>
+                <p>
+                  I work on the development and maintenance of key modules for
+                  an occupational health platform using .NET, Node.js, Vue, and
+                  Quasar. I improved authentication, validations, performance,
+                  UI/UX, and security flows, including password recovery,
+                  session management, and bulk processes with Excel. I actively
+                  contribute to system stability alongside the QA team and the
+                  agile cycle using Azure DevOps.
+                </p>
+                <small>May 2025 - Present</small>
+
+                <button class="btn-expand" onclick="toggleDetails(this)">
+                  Show details <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="timeline-details">
+                  <h4>Key Achievements</h4>
+                  <ul>
+                    <li>
+                      Integration of the TiloPay payment gateway with end-to-end
+                      testing to enable electronic payments within the platform.
+                    </li>
+                    <li>
+                      Product Innovation: Building AI-powered solutions that
+                      solve complex business problems with focus on scalability
+                      and user experience
+                    </li>
+                  </ul>
+
+                  <h4>Tech Stack</h4>
+                  <div class="tech-stack-container">
+                    <span class="tech-item">Node</span>
+                    <span class="tech-item">VueJS</span>
+                    <span class="tech-item">Quasar Framework</span>
+                    <span class="tech-item">.NET</span>
+                    <span class="tech-item">SQL Server</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-container right">
+              <div class="timeline-content">
+                <h3>Intern</h3>
+                <h5>J&G Solutions</h5>
+                <p>
+                  I participated in the development of a clinical management
+                  system by creating frontend components, validations, PDF
+                  flows, and secure storage in Azure Blob Storage. I implemented
+                  digital signatures, document management, and dynamic reports,
+                  as well as collaborating in the agile process with tasks,
+                  meetings, and deployments in Azure DevOps.
+                </p>
+                <small>Nov 2024 - Abr 2025</small>
+
+                <button class="btn-expand" onclick="toggleDetails(this)">
+                  Show details <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="timeline-details">
+                  <h4>Key Achievements</h4>
+                  <ul>
+                    <li>
+                      Frontend Architecture: Designed and implemented scalable
+                      frontend architecture using VueJS and Quasar
+                    </li>
+                    <li>
+                      Design of complete flows for templates, PDF generation,
+                      printing, and cloud storage.
+                    </li>
+                  </ul>
+
+                  <h4>Tech Stack</h4>
+                  <div class="tech-stack-container">
+                    <span class="tech-item">Azure Blob Storage</span>
+                    <span class="tech-item"> Azure DevOps</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-item">C#</span>
+                    <span class="tech-item">Git</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-container left">
+              <div class="timeline-content">
+                <h3>Freelance</h3>
+                <h5>Independent</h5>
+                <p>
+                  I developed full-stack web projects for learning and practice,
+                  building APIs, dynamic interfaces, and complete applications
+                  with PHP, Node.js, JavaScript, and Angular. I implemented
+                  CRUDs, e-commerce, personal systems, and prototypes in Figma,
+                  strengthening my technical skills and my ability to learn
+                  independently.
+                </p>
+                <small>Jun 2023 - Oct 2024</small>
+
+                <button class="btn-expand" onclick="toggleDetails(this)">
+                  Show details <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="timeline-details">
+                  <h4>Key Achievements</h4>
+                  <ul>
+                    <li>
+                      Full Stack Development: Contributed to both frontend and
+                      backend development of core product features
+                    </li>
+                    <li>
+                      API Development: Developed RESTful APIs using JQuery and
+                      PHP
+                    </li>
+                  </ul>
+
+                  <h4>Tech Stack</h4>
+                  <div class="tech-stack-container">
+                    <span class="tech-item">PHP</span>
+                    <span class="tech-item">Bootstrap</span>
+                    <span class="tech-item">Angular</span>
+                    <span class="tech-item">PHPMyAdmin</span>
+                    <span class="tech-item">JQuery</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

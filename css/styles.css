@@ -1,6 +1,9 @@
 html,
 body {
-  font: normal 80% Courier, Helvetica, sans-serif;
+  font:
+    normal 80% Courier,
+    Helvetica,
+    sans-serif;
   height: 100%;
   padding: 0;
 }
@@ -303,7 +306,9 @@ section {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  transition:
+    0.3s cubic-bezier(0.6, 0.4, 0, 1),
+    transform 0.15s ease;
   display: inline-block;
   flex-direction: column;
   justify-content: center;
@@ -964,4 +969,266 @@ body::-ms-scrollbar-thumb {
   .background-card .neon-button {
     font-size: 0.8rem !important;
   }
+}
+/* Experience Section */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #808080;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 3px;
+}
+
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-container.left {
+  left: 0;
+}
+
+.timeline-container.right {
+  left: 50%;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #000;
+  border: 4px solid #808080;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-container.right::after {
+  left: -13px;
+}
+
+.timeline-content {
+  padding: 20px 30px;
+  background-color: rgb(5, 5, 5);
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #808080;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  background-color: rgb(7, 7, 7);
+  transform: scale(1.02);
+}
+
+.timeline-content:hover h3,
+.timeline-content:hover h5,
+.timeline-content:hover p,
+.timeline-content:hover small {
+  color: white !important;
+}
+
+.timeline-content h3 {
+  font-family: "Kadwa", courier;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(237, 237, 237);
+  margin-top: 0;
+}
+
+.timeline-content h5 {
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: #b5b5b5;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #9b99a0;
+  margin-bottom: 0;
+}
+
+.timeline-content small {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* Response Arrows */
+
+.timeline-container.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #808080;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #808080;
+}
+
+.timeline-container.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #808080;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #808080 transparent transparent;
+}
+
+/* Media queries - Responsive timeline */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid #808080;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #808080 transparent transparent;
+  }
+
+  .timeline-container.left::after,
+  .timeline-container.right::after {
+    left: 18px;
+  }
+
+  .timeline-container.right {
+    left: 0%;
+  }
+
+  .timeline-container.left::before {
+    right: auto;
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #808080 transparent transparent;
+  }
+}
+
+/* Expandable Content Styles */
+.timeline-details {
+  display: none;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  animation: fade-in-details 0.5s ease;
+}
+
+@keyframes fade-in-details {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-details h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: "Kadwa", courier;
+}
+
+.timeline-details ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.timeline-details ul li {
+  position: relative;
+  margin-bottom: 8px;
+  color: #d4d4d4;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.timeline-details ul li::before {
+  content: "▸";
+  position: absolute;
+  left: -25px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  top: -4px;
+}
+
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.tech-item {
+  font-weight: bold;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  background: #1a1a1a;
+  padding: 4px 12px;
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+.btn-expand {
+  background: transparent;
+  border: 1px solid #808080;
+  color: #b5b5b5;
+  padding: 6px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-expand:hover {
+  background-color: #333;
+  color: white;
+  border-color: white;
+}
+
+.btn-expand i {
+  transition: transform 0.3s;
+  font-size: 1.1em;
+  margin-top: 2px;
+}
+
+.btn-expand.active i {
+  transform: rotate(180deg);
 }

@@ -206,7 +206,7 @@ function generateCarousel(numOfItems) {
                   </div>
                 </div>
               </div>
-              `
+              `,
             )
             .join("")}
         </div>
@@ -214,4 +214,19 @@ function generateCarousel(numOfItems) {
     `;
   }
   carouselContent.innerHTML = carouselItems;
+}
+
+function toggleDetails(button) {
+  const details = button.nextElementSibling;
+  const icon = button.querySelector("+");
+
+  if (details.style.display === "block") {
+    details.style.display = "none";
+    button.innerHTML = 'Show details <i class=\"fas fa-chevron-down\"></i>';
+    button.classList.remove("active");
+  } else {
+    details.style.display = "block";
+    button.innerHTML = 'Hide details <i class=\"fas fa-chevron-up\"></i>';
+    button.classList.add("active");
+  }
 }
