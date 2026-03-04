@@ -218,7 +218,7 @@ function generateCarousel(numOfItems) {
 
 function toggleDetails(button) {
   const details = button.nextElementSibling;
-  const icon = button.querySelector("+");
+  // const icon = button.querySelector("+");
 
   if (details.style.display === "block") {
     details.style.display = "none";
