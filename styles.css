@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+/* ----------------------------- */
+/* Root Variables */
+/* ----------------------------- */
+
+:root {
+  /* Base colors */
+  --bg-deep: #05070a;
+  --bg-mid: #0b1017;
+  --bg-surface: #131a24;
+
+  /* Accent palette */
+  --accent-primary: #3b82f6;
+  --accent-secondary: #06b6d4;
+
+  /* Glow (ligeramente más controlado) */
+  --accent-glow: rgba(59, 130, 246, 0.08);
+  --accent-glow-soft: rgba(6, 182, 212, 0.05);
+
+  /* Text */
+  --text-primary: #e6edf3;
+  --text-secondary: #94a3b8;
+
+  /* UI */
+  --radius: 10px;
+  --shadow: rgba(0, 0, 0, 0.55) 0px 15px 40px;
+  --transition-fast: 0.2s ease-in-out;
+}
+
+/* ----------------------------- */
+/* Base Styles */
+/* ----------------------------- */
+
+html {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.25s ease;
+  font-size: 0.9rem;
+}
+
+
+
+.mobile-nav-link {
+  display: block;
+  padding: 0.7rem 0;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:focus-visible,
+.cta-btn:focus-visible,
+.lang-toggle:focus-visible,
+.experience-toggle:focus-visible,
+#certifications-list button:focus-visible,
+#social-links a:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.9);
+  outline-offset: 3px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-deep);
+  background-image:
+    radial-gradient(
+      700px 500px at 10% 12%,
+      var(--accent-glow),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 700px at 95% 95%,
+      var(--accent-glow-soft),
+      transparent 65%
+    ),
+    linear-gradient(180deg, #05070a 0%, #070c13 40%, #0b1017 100%);
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ----------------------------- */
+/* Hero Background Blobs */
+/* ----------------------------- */
+
+#hero {
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 60%;
+  height: 140%;
+  background:
+    radial-gradient(circle at 20% 30%, var(--accent-glow), transparent 45%),
+    radial-gradient(circle at 80% 70%, var(--accent-glow-soft), transparent 50%);
+  filter: blur(90px);
+  transform: rotate(-10deg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  bottom: -20%;
+  width: 45%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(59, 130, 246, 0.05),
+    transparent 45%
+  );
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ----------------------------- */
+/* Glass Card */
+/* ----------------------------- */
+
+.glass-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  backdrop-filter: blur(6px) saturate(120%);
+  transition: all var(--transition-fast);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+/* ----------------------------- */
+/* Projects Card Glow Hover */
+/* ----------------------------- */
+
+.project-card-glow:hover {
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.18);
+  border-color: var(--accent-glow);
+}
+
+/* ----------------------------- */
+/* CTA Button */
+/* ----------------------------- */
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.7rem;
+  padding: 0.7rem 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.03)
+  );
+  color: #fff;
+  border-radius: calc(var(--radius) + 4px);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 15px 40px;
+}
+
+.lang-toggle:hover:not(.active) {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.09);
+}
+
+.lang-toggle.active {
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.25),
+    rgba(6, 182, 212, 0.25)
+  );
+  color: #fff;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 2.5px 15px rgba(59, 130, 246, 0.3);
+}
+
+@keyframes langPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-lang-pop {
+  animation: langPop 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.experience-toggle {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+}
+
+/* ----------------------------- */
+/* Hero image styling */
+/* ----------------------------- */
+.hero-img-wrap {
+  display: inline-block;
+  padding: 4px; /* ancho del borde */
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  transition:
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.12);
+}
+.hero-img-inner {
+  display: block;
+
+  border-radius: 9999px;
+  object-fit: cover;
+  background: var(--bg-surface);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  transition: transform var(--transition-fast);
+}
+.hero-img-wrap:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.18);
+}
+.hero-img-wrap:hover .hero-img-inner {
+  transform: scale(1.02);
+}
+
+/* ----------------------------- */
+/* Animation Utility */
+/* ----------------------------- */
+
+.animate-section {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* ----------------------------- */
+/* Stats Card 3D Effect */
+/* ----------------------------- */
+
+.stat-card {
+  transition:
+    transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.stat-card:hover {
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.3);
+  z-index: 10;
+}
+
+.stat-card .spotlight {
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.stat-card-content {
+  transform: translateZ(20px);
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.stat-card-icon {
+  transform: translateZ(30px);
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+/* ----------------------------- */
+/* Custom Scrollbar */
+/* ----------------------------- */
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

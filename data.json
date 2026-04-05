@@ -1,0 +1,532 @@
+{
+  "ui": {
+    "en": {
+      "documentTitle": "Professional Portfolio",
+      "brand": "Portfolio",
+      "nav": {
+        "about": "About",
+        "experience": "Experience",
+        "skills": "Skills",
+        "education": "Education",
+        "certifications": "Certifications",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      "sections": {
+        "about": "About me",
+        "experience": "Experience",
+        "skills": "Technical Skills",
+        "education": "Education",
+        "certifications": "Certifications",
+        "projects": "Featured Projects"
+      },
+      "hero": {
+        "availability": "Available for hire",
+        "cta": "See more",
+        "imageAlt": "Photo of {name}"
+      },
+      "about": {
+        "cvNote": "Learn more about my career in detail",
+        "downloadCv": "Download CV"
+      },
+      "experience": {
+        "achievements": "Key Achievements",
+        "techStack": "Tech Stack"
+      },
+      "projects": {
+        "viewProject": "View project"
+      },
+      "certifications": {
+        "noImage": "No image available",
+        "previous": "Previous",
+        "next": "Next",
+        "goToSlide": "Go to slide {index}"
+      },
+      "footer": {
+        "title": "Let's work together",
+        "description": "If you are interested in collaborating or have any questions, do not hesitate to contact me.",
+        "copyright": "© 2026 Keyner Mena C. All rights reserved."
+      }
+    },
+    "es": {
+      "documentTitle": "Portafolio Profesional",
+      "brand": "Portafolio",
+      "nav": {
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "skills": "Habilidades",
+        "education": "Educación",
+        "certifications": "Certificaciones",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+      },
+      "sections": {
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "skills": "Habilidades técnicas",
+        "education": "Educación",
+        "certifications": "Certificaciones",
+        "projects": "Proyectos destacados"
+      },
+      "hero": {
+        "availability": "Disponible para trabajar",
+        "cta": "Ver más",
+        "imageAlt": "Foto de {name}"
+      },
+      "about": {
+        "cvNote": "Conoce más sobre mi trayectoria en detalle",
+        "downloadCv": "Descargar CV"
+      },
+      "experience": {
+        "achievements": "Logros clave",
+        "techStack": "Stack tecnológico"
+      },
+      "projects": {
+        "viewProject": "Ver proyecto"
+      },
+      "certifications": {
+        "noImage": "Imagen no disponible",
+        "previous": "Anterior",
+        "next": "Siguiente",
+        "goToSlide": "Ir a la diapositiva {index}"
+      },
+      "footer": {
+        "title": "Trabajemos juntos",
+        "description": "Si te interesa colaborar o tienes alguna pregunta, no dudes en contactarme.",
+        "copyright": "© 2026 Keyner Mena C. Todos los derechos reservados."
+      }
+    }
+  },
+  "hero": {
+    "name": "Keyner Mena Calderón",
+    "role": {
+      "en": "Full-Stack Developer & Computer Engineer",
+      "es": "Desarrollador Full-Stack e Ingeniero en Computación"
+    },
+    "location": "Costa Rica",
+    "bio": {
+      "en": "Computer Engineer and Full-Stack Developer with hands-on experience delivering end-to-end web features in production environments. Experienced in microservices, backend API design, secure authentication mechanisms, and building maintainable frontend components using .NET, Node.js, Vue.js, and Quasar.",
+      "es": "Ingeniero en Computación y Desarrollador Full-Stack con experiencia práctica entregando funcionalidades web de punta a punta en entornos productivos. Tengo experiencia en microservicios, diseño de APIs backend, mecanismos de autenticación segura y construcción de componentes frontend mantenibles con .NET, Node.js, Vue.js y Quasar."
+    },
+    "image": "images/photo.jpg"
+  },
+  "about": {
+    "cvUrl": {
+      "en": "./CV-Keyner-Mena-ENG.pdf",
+      "es": "./CV-Keyner-Mena-ES.pdf"
+    },
+    "text": {
+      "en": [
+        "I got into this area in 2020, when I started learning the basics of web development in high school. Since then, I have discovered that I really like software development and design to create quality apps. I consider myself a passionate developer with a love for coding and learning.",
+        "I'm experienced in microservices, designing backend APIs, data models, and secure authentication mechanisms, as well as building maintainable frontend components using .NET, Node.js, Vue.js, and Quasar."
+      ],
+      "es": [
+        "Entré en esta área en 2020, cuando comencé a aprender las bases del desarrollo web en el colegio. Desde entonces descubrí que realmente disfruto el desarrollo de software y el diseño para crear aplicaciones de calidad. Me considero un desarrollador apasionado, con amor por programar y seguir aprendiendo.",
+        "Tengo experiencia en microservicios, diseño de APIs backend, modelos de datos y mecanismos de autenticación segura, además de construir componentes frontend mantenibles utilizando .NET, Node.js, Vue.js y Quasar."
+      ]
+    },
+    "stats": [
+      {
+        "value": {
+          "en": "+2 Years",
+          "es": "+2 años"
+        },
+        "label": {
+          "en": "of Experience",
+          "es": "de experiencia"
+        },
+        "icon": "briefcase"
+      },
+      {
+        "value": {
+          "en": "AI",
+          "es": "IA"
+        },
+        "label": {
+          "en": "Driven Development",
+          "es": "Desarrollo impulsado por IA"
+        },
+        "icon": "bot"
+      },
+      {
+        "value": "+10",
+        "label": {
+          "en": "Successful Projects",
+          "es": "proyectos exitosos"
+        },
+        "icon": "folder-git-2"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "role": {
+        "en": "Junior Full-Stack Developer",
+        "es": "Desarrollador Full-Stack Junior"
+      },
+      "company": "J and G Solutions",
+      "period": {
+        "en": "May 2025 - Dec 2025",
+        "es": "May 2025 - Dic 2025"
+      },
+      "description": {
+        "en": "Developed full-stack features for PuraVidaSafety (Occupational Health and Safety Platform) using .NET, Node.js, Vue.js, Quasar, and SQL Server. Designed backend APIs with JWT authentication and role-based access control. Integrated TiloPay payment gateway, implemented security improvements, Excel import/export functionality, and migrated Node.js and Quasar dependencies.",
+        "es": "Desarrollé funcionalidades full-stack para PuraVidaSafety (plataforma de salud y seguridad ocupacional) usando .NET, Node.js, Vue.js, Quasar y SQL Server. Diseñé APIs backend con autenticación JWT y control de acceso por roles. Integré la pasarela de pago TiloPay, implementé mejoras de seguridad, funcionalidades de importación y exportación con Excel, y migré dependencias de Node.js y Quasar."
+      },
+      "achievements": {
+        "en": [
+          "Designed backend APIs with JWT authentication and role-based access control.",
+          "Integrated TiloPay payment gateway for secure transactions.",
+          "Implemented critical security improvements and Excel import/export utility functionality.",
+          "Migrated and updated key Node.js and Quasar dependencies."
+        ],
+        "es": [
+          "Diseñé APIs backend con autenticación JWT y control de acceso por roles.",
+          "Integré la pasarela de pago TiloPay para transacciones seguras.",
+          "Implementé mejoras críticas de seguridad y utilidades de importación y exportación con Excel.",
+          "Migré y actualicé dependencias clave de Node.js y Quasar."
+        ]
+      },
+      "techStack": [".NET", "Node.js", "Vue.js", "Quasar", "SQL Server", "JWT"]
+    },
+    {
+      "role": {
+        "en": "Frontend & Backend Intern",
+        "es": "Practicante de Frontend y Backend"
+      },
+      "company": "J and G Solutions",
+      "period": {
+        "en": "Nov 2024 - May 2025",
+        "es": "Nov 2024 - May 2025"
+      },
+      "description": {
+        "en": "Worked on FisioFile (Clinical Records System) developing frontend components with Vue.js and Quasar. Implemented digital signature functionality, PDF generation workflows, Azure Blob Storage integration, and backend logic for document management.",
+        "es": "Trabajé en FisioFile (sistema de expedientes clínicos) desarrollando componentes frontend con Vue.js y Quasar. Implementé funcionalidad de firma digital, flujos de generación de PDF, integración con Azure Blob Storage y lógica backend para gestión documental."
+      },
+      "achievements": {
+        "en": [
+          "Developed structured and efficient frontend components for FisioFile (Clinical Records System).",
+          "Designed and implemented complex digital signature functionality.",
+          "Created efficient PDF generation workflows for clinical records.",
+          "Integrated Azure Blob Storage correctly for robust backend document management."
+        ],
+        "es": [
+          "Desarrollé componentes frontend estructurados y eficientes para FisioFile (sistema de expedientes clínicos).",
+          "Diseñé e implementé una funcionalidad compleja de firma digital.",
+          "Creé flujos eficientes de generación de PDF para expedientes clínicos.",
+          "Integré Azure Blob Storage correctamente para una gestión documental backend sólida."
+        ]
+      },
+      "techStack": ["Vue.js", "Quasar", "Azure Blob Storage", "PDF Generation"]
+    },
+    {
+      "role": {
+        "en": "Freelance / Independent Software Developer",
+        "es": "Desarrollador de Software Freelance / Independiente"
+      },
+      "company": {
+        "en": "Personal & Collaborative Projects",
+        "es": "Proyectos personales y colaborativos"
+      },
+      "period": {
+        "en": "Jun 2023 - Oct 2024",
+        "es": "Jun 2023 - Oct 2024"
+      },
+      "description": {
+        "en": "Designed and developed end-to-end web applications using PHP, Node.js, Angular, JavaScript, SQL, and Figma. Built RESTful APIs, CRUD systems, an e-commerce platform, and a task management application.",
+        "es": "Diseñé y desarrollé aplicaciones web de punta a punta utilizando PHP, Node.js, Angular, JavaScript, SQL y Figma. Construí APIs RESTful, sistemas CRUD, una plataforma de comercio electrónico y una aplicación de gestión de tareas."
+      },
+      "achievements": {
+        "en": [
+          "Designed and developed complete end-to-end modern web applications.",
+          "Built dynamic RESTful APIs and connected CRUD systems.",
+          "Developed custom solutions like an e-commerce platform and a task management application for diverse requirements."
+        ],
+        "es": [
+          "Diseñé y desarrollé aplicaciones web modernas completas de punta a punta.",
+          "Construí APIs RESTful dinámicas y sistemas CRUD conectados.",
+          "Desarrollé soluciones a la medida como una plataforma e-commerce y una aplicación de gestión de tareas para distintos requerimientos."
+        ]
+      },
+      "techStack": ["PHP", "Node.js", "Angular", "JavaScript", "SQL", "Figma"]
+    }
+  ],
+  "skills": [
+    { "name": "JavaScript", "icon": "devicon-javascript-plain" },
+    { "name": "Python", "icon": "devicon-python-plain" },
+    { "name": "PHP", "icon": "devicon-php-plain" },
+    { "name": "Java", "icon": "devicon-java-plain" },
+    { "name": "C#", "icon": "devicon-csharp-plain" },
+    { "name": "SQL", "icon": "devicon-azuresqldatabase-plain" },
+    { "name": "Vue.js", "icon": "devicon-vuejs-plain" },
+    { "name": "Quasar", "icon": "devicon-quasar-plain" },
+    { "name": "Node.js", "icon": "devicon-nodejs-plain" },
+    { "name": ".NET 8 & 9", "icon": "devicon-dotnetcore-plain" },
+    {
+      "name": {
+        "en": "Angular (basic)",
+        "es": "Angular (básico)"
+      },
+      "icon": "devicon-angularjs-plain"
+    },
+    {
+      "name": {
+        "en": "React (basic)",
+        "es": "React (básico)"
+      },
+      "icon": "devicon-react-original"
+    },
+    { "name": "SQL Server", "icon": "devicon-microsoftsqlserver-plain" },
+    { "name": "MySQL", "icon": "devicon-mysql-plain" },
+    { "name": "Git", "icon": "devicon-git-plain" },
+    { "name": "GitHub", "icon": "devicon-github-original" },
+    { "name": "Azure DevOps", "icon": "devicon-azure-plain" },
+    { "name": "Postman", "icon": "devicon-postman-plain" },
+    { "name": "Figma", "icon": "devicon-figma-plain" },
+    { "name": "Jira", "icon": "devicon-jira-plain" }
+  ],
+  "education": [
+    {
+      "degree": {
+        "en": "Bachelor's Degree in Computer Engineering",
+        "es": "Bachillerato en Ingeniería en Computación"
+      },
+      "institution": {
+        "en": "Florencio del Castillo University (UCA)",
+        "es": "Universidad Florencio del Castillo (UCA)"
+      },
+      "period": {
+        "en": "2022 - 2025",
+        "es": "2022 - 2025"
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "title": {
+        "en": "English Certification",
+        "es": "Certificación de inglés"
+      },
+      "issuer": {
+        "en": "University of Costa Rica",
+        "es": "Universidad de Costa Rica"
+      },
+      "year": "2021",
+      "image": "images/cert-english.webp"
+    },
+    {
+      "title": {
+        "en": "AI Development",
+        "es": "Desarrollo con IA"
+      },
+      "issuer": "BIG School / mouredev",
+      "year": "2026",
+      "image": "images/cert-ai-development.webp"
+    },
+    {
+      "title": {
+        "en": "100 AI Terms",
+        "es": "100 términos de IA"
+      },
+      "issuer": "Silicon Valley",
+      "year": "2025",
+      "image": "images/cert-ai-terms.webp"
+    },
+    {
+      "title": {
+        "en": "AI for Life and Work",
+        "es": "IA para la vida y el trabajo"
+      },
+      "issuer": "Silicon Valley",
+      "year": "2025",
+      "image": "images/cert-ai-for-life.webp"
+    },
+    {
+      "title": {
+        "en": "Web Development",
+        "es": "Desarrollo web"
+      },
+      "issuer": "Google",
+      "year": "2024",
+      "image": "images/cert-web-development.webp"
+    },
+    {
+      "title": {
+        "en": "Cybersecurity (Basic)",
+        "es": "Ciberseguridad (básico)"
+      },
+      "issuer": {
+        "en": "Braulio Carrillo University",
+        "es": "Universidad Braulio Carrillo"
+      },
+      "year": "2025",
+      "image": "images/cert-cybersecurity.webp"
+    },
+    {
+      "title": "Power BI + AI",
+      "issuer": "Daxus Latam",
+      "year": "2026",
+      "image": "images/cert-power-bi.webp"
+    },
+    {
+      "title": {
+        "en": "Microsoft Excel Specialized",
+        "es": "Microsoft Excel especializado"
+      },
+      "issuer": {
+        "en": "Braulio Carrillo University",
+        "es": "Universidad Braulio Carrillo"
+      },
+      "year": "2025",
+      "image": "images/cert-excel.webp"
+    }
+  ],
+  "projects": [
+    {
+      "title": {
+        "en": "Clothing Store Management System",
+        "es": "Sistema de gestión para tienda de ropa"
+      },
+      "description": {
+        "en": "End-to-end business management platform featuring a custom-built API to handle inventory, product data, stock control, and real-time analytics. Designed with scalability in mind, this project showcases my ability to translate business needs into efficient, data-driven solutions.",
+        "es": "Plataforma de gestión empresarial de punta a punta con una API personalizada para manejar inventario, datos de productos, control de stock y analítica en tiempo real. Diseñado con escalabilidad en mente, este proyecto demuestra mi capacidad para traducir necesidades de negocio en soluciones eficientes basadas en datos."
+      },
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "AJAX",
+        "Bootstrap",
+        "REST API",
+        "phpMyAdmin"
+      ],
+      "link": "https://github.com/Keyner-Mena/CRUD-JS-PHP.git",
+      "image": "images/interface-crud-js.png"
+    },
+    {
+      "title": {
+        "en": "Coffee Shop E-Commerce",
+        "es": "E-commerce para cafetería"
+      },
+      "description": {
+        "en": "A fully responsive e-commerce website built around a coffee shop concept, featuring key modules such as product catalog, shopping cart, checkout flow, and contact system. Focused on delivering a smooth user experience and an intuitive purchase journey.",
+        "es": "Sitio web e-commerce totalmente responsivo construido alrededor del concepto de una cafetería, con módulos clave como catálogo de productos, carrito de compras, flujo de pago y sistema de contacto. Enfocado en brindar una experiencia fluida y un proceso de compra intuitivo."
+      },
+      "tech": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      "link": "https://github.com/Keyner-Mena/Proyecto-Cafeteria.git",
+      "demoLink": "https://keyner-mena.github.io/Proyecto-Cafeteria/",
+      "image": "images/interface-e-commerce.png"
+    },
+    {
+      "title": {
+        "en": "Dynamic Job Application Form",
+        "es": "Formulario dinámico de solicitud de empleo"
+      },
+      "description": {
+        "en": "Interactive web form powered by AJAX, designed to submit and validate candidate data in real time using a JSON-based backend, to streamline recruitment workflows and improve data accuracy.",
+        "es": "Formulario web interactivo impulsado por AJAX, diseñado para enviar y validar datos de candidatos en tiempo real utilizando un backend basado en JSON, con el fin de agilizar flujos de reclutamiento y mejorar la precisión de los datos."
+      },
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "AJAX",
+        "JSON",
+        "JSON Server",
+        "Bootstrap"
+      ],
+      "link": "https://github.com/Keyner-Mena/Web-AJAX.git",
+      "image": "images/interface-ajax.png"
+    },
+    {
+      "title": {
+        "en": "Task Management App",
+        "es": "Aplicación de gestión de tareas"
+      },
+      "description": {
+        "en": "Web-based task management application with full CRUD functionality, enabling users to efficiently organize and track their daily activities. Built to strengthen backend integration and data persistence using PHP and relational databases.",
+        "es": "Aplicación web de gestión de tareas con funcionalidad CRUD completa, que permite a los usuarios organizar y dar seguimiento a sus actividades diarias de forma eficiente. Fue construida para fortalecer la integración backend y la persistencia de datos utilizando PHP y bases de datos relacionales."
+      },
+      "tech": [
+        "HTML",
+        "Bootstrap",
+        "JavaScript",
+        "jQuery",
+        "PHP",
+        "phpMyAdmin"
+      ],
+      "link": "https://github.com/Keyner-Mena/Tasks-App.git",
+      "image": "images/interface-tasks-app.png"
+    },
+    {
+      "title": {
+        "en": "Memory Game (Desktop)",
+        "es": "Juego de memoria (escritorio)"
+      },
+      "description": {
+        "en": "Desktop-based memory game developed in Visual Studio. Challenges users to match card pairs while demonstrating my ability to build interactive applications with structured logic and event-driven programming.",
+        "es": "Juego de memoria de escritorio desarrollado en Visual Studio. Desafía a los usuarios a encontrar pares de cartas mientras demuestra mi capacidad para construir aplicaciones interactivas con lógica estructurada y programación orientada a eventos."
+      },
+      "tech": ["Visual Basic", ".NET Framework", "Windows Forms"],
+      "link": "https://github.com/Keyner-Mena/Memory-game-VB.git",
+      "image": "images/interface-memory.png"
+    },
+    {
+      "title": "Pokédex App",
+      "description": {
+        "en": "Interactive Pokédex simulator built with Python and Flet, integrating asynchronous API consumption from PokeAPI. Combines retro UI design with real-time data fetching to deliver a dynamic and engaging user experience.",
+        "es": "Simulador interactivo de Pokédex desarrollado con Python y Flet, integrando consumo asíncrono de APIs desde PokeAPI. Combina una interfaz retro con obtención de datos en tiempo real para ofrecer una experiencia dinámica y atractiva."
+      },
+      "tech": ["Python", "Flet", "REST API"],
+      "link": "https://github.com/Keyner-Mena/Pokedex-Python.git",
+      "image": "images/interface-pokedex.png"
+    },
+    {
+      "title": {
+        "en": "Workforce Management System",
+        "es": "Sistema de gestión de personal"
+      },
+      "description": {
+        "en": "Full-stack employee management system with an Angular frontend and PHP-based API connected to a SQL database. Enables efficient employee operations including creation, updates, deletion, and search.",
+        "es": "Sistema full-stack de gestión de empleados con frontend en Angular y API en PHP conectada a una base de datos SQL. Permite operaciones eficientes sobre empleados, incluyendo creación, actualización, eliminación y búsqueda."
+      },
+      "tech": ["Angular", "Bootstrap", "PHP", "phpMyAdmin", "SQL"],
+      "link": "https://github.com/Keyner-Mena/CRUD-ANGULAR.git",
+      "image": "images/interface-crud-angular.png"
+    },
+    {
+      "title": {
+        "en": "Tourism App UI Design",
+        "es": "Diseño UI para app de turismo"
+      },
+      "description": {
+        "en": "User-centered interface design for a tourism platform created in Figma. Focused on usability, visual hierarchy, and intuitive navigation to help users easily discover points of interest and services.",
+        "es": "Diseño de interfaz centrado en el usuario para una plataforma de turismo creada en Figma. Enfocado en usabilidad, jerarquía visual y navegación intuitiva para ayudar a los usuarios a descubrir fácilmente puntos de interés y servicios."
+      },
+      "tech": ["Figma", "UI/UX Design"],
+      "link": "https://www.figma.com/file/YhBYQLV2blY8IKKqR68eOC/Untitled?type=design&node-id=0%3A1&mode=design&t=aVYGbIL2rBtHXK19-1",
+      "image": "images/interface-figma-app.png"
+    }
+  ],
+  "socials": [
+    {
+      "icon": "devicon-github-original",
+      "url": "https://github.com/Keyner-Mena",
+      "label": "GitHub"
+    },
+    {
+      "icon": "devicon-linkedin-plain",
+      "url": "https://www.linkedin.com/in/keyner-mena",
+      "label": "LinkedIn"
+    },
+    {
+      "icon": "mail",
+      "url": "mailto:keynermena896@gmail.com",
+      "label": {
+        "en": "Email",
+        "es": "Correo"
+      }
+    }
+  ]
+}

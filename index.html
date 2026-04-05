@@ -1,644 +1,274 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Keyner Mena</title>
-    <meta
-      name="description"
-      content="Portfolio web Keyner Mena, desarrollador frontend y backend. Información importante: Proyectos personales, habilidades, tecnologías, contacto..."
-    />
-    <meta
-      name="keywords"
-      content="Keyner Mena, desarrollador web, frontend, backend, fullstack,  JavaScript, Angular, Node.js, Costa Rica, portfolio"
-    />
-    <meta name="author" content="Keyner Mena" />
-
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="icon" type="image/png" href="./images/Icon.ico" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </head>
-  <body>
-    <!-- Particles Background -->
-    <div id="particles-js"></div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarColor02"
-        aria-controls="navbarColor02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+  <body
+    class="bg-[#0a0a0a] text-gray-300 font-sans antialiased selection:bg-white selection:text-black"
+  >
+    <nav
+      class="fixed w-full z-50 top-0 border-b border-white/5 bg-[#0b1017]/70 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
+    >
+      <div
+        class="max-w-5xl mx-auto px-3 sm:px-6 min-h-16 py-3 flex items-center justify-between gap-1 sm:gap-3"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link hover:underline" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link redirect" name="about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link redirect" name="studies">Studies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link redirect" name="experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link redirect" name="projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link redirect" name="skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link redirect" name="contact">Contact</a>
-            </li>
-          </ul>
+        <!-- Mobile Menu & Brand -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="lg:hidden relative inline-flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0] text-white backdrop-blur-md overflow-hidden transition-all duration-300 hover:border-transparent hover:shadow-lg hover:shadow-black/30 group"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav-panel"
+          >
+            <span class="absolute inset-0 bg-[linear-gradient(90deg,var(--accent-primary),var(--accent-secondary))] opacity-0 blur-lg transition-all duration-500 group-hover:opacity-100 group-hover:blur-0"></span>
+            <i data-lucide="menu" class="relative z-10 w-4 h-4 transition-transform duration-300 group-hover:scale-110"></i>
+          </button>
+          
+          <a
+            href="#"
+            id="site-brand"
+            class="text-white font-medium tracking-tight text-base sm:text-lg hover:opacity-80 transition-opacity shrink-0"
+            >Portfolio.</a
+          >
+        </div>
+        <div class="hidden lg:flex gap-5 xl:gap-6 text-sm">
+          <a
+            href="#about"
+            id="nav-about"
+            class="nav-link hover:text-white transition-colors redirect"
+            name="about"
+            >About</a
+          >
+          <a
+            href="#experience"
+            id="nav-experience"
+            class="nav-link hover:text-white transition-colors redirect"
+            name="experience"
+            >Experience</a
+          >
+          <a
+            href="#skills"
+            id="nav-skills"
+            class="nav-link hover:text-white transition-colors redirect"
+            name="skills"
+            >Skills</a
+          >
+          <a
+            href="#education"
+            id="nav-education"
+            class="nav-link hover:text-white transition-colors redirect"
+            name="education"
+            >Education</a
+          >
+          <a
+            href="#certifications"
+            id="nav-certifications"
+            class="nav-link hover:text-white transition-colors redirect"
+            name="certifications"
+            >Certifications</a
+          >
+          <a
+            href="#projects"
+            id="nav-projects"
+            class="nav-link hover:text-white transition-colors redirect"
+            name="projects"
+            >Projects</a
+          >
+        </div>
+        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0 ml-auto">
+          <div
+            class="flex items-center gap-0.5 sm:gap-1 rounded-full border border-white/10 p-0.5 sm:p-1"
+            aria-label="Language switcher"
+          >
+            <button
+              type="button"
+              class="lang-toggle rounded-full px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-[0.2em] text-gray-400 transition-all duration-300"
+              data-language="en"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              class="lang-toggle rounded-full px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-[0.2em] text-gray-400 transition-all duration-300"
+              data-language="es"
+            >
+              ES
+            </button>
+          </div>
+          <a
+            href="#contact"
+            class="relative inline-block px-2 sm:px-5 py-1.5 sm:py-2 text-[11px] sm:text-sm font-semibold rounded-md text-white border border-white/10 backdrop-blur-md overflow-hidden transition-all duration-300 hover:border-transparent hover:shadow-lg hover:shadow-black/30 group whitespace-nowrap"
+          >
+            <span id="nav-contact-label" class="relative z-10">Contact</span>
+
+            <span
+              class="absolute inset-0 bg-[linear-gradient(90deg,var(--accent-primary),var(--accent-secondary))] opacity-0 blur-lg transition-all duration-500 group-hover:opacity-100 group-hover:blur-0"
+            >
+            </span>
+          </a>
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-nav-panel"
+        class="mobile-nav-panel lg:hidden border-t border-white/5 grid grid-rows-[0fr] transition-all duration-300 ease-in-out opacity-0 pointer-events-none"
+      >
+        <div class="overflow-hidden">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-2 text-sm">
+            <a
+              href="#about"
+              class="mobile-nav-link nav-link hover:text-white transition-colors redirect"
+              name="about"
+              >About</a
+            >
+            <a
+              href="#experience"
+              class="mobile-nav-link nav-link hover:text-white transition-colors redirect"
+              name="experience"
+              >Experience</a
+            >
+            <a
+              href="#skills"
+              class="mobile-nav-link nav-link hover:text-white transition-colors redirect"
+              name="skills"
+              >Skills</a
+            >
+            <a
+              href="#education"
+              class="mobile-nav-link nav-link hover:text-white transition-colors redirect"
+              name="education"
+              >Education</a
+            >
+            <a
+              href="#certifications"
+              class="mobile-nav-link nav-link hover:text-white transition-colors redirect"
+              name="certifications"
+              >Certifications</a
+            >
+            <a
+              href="#projects"
+              class="mobile-nav-link nav-link hover:text-white transition-colors redirect"
+              name="projects"
+              >Projects</a
+            >
+          </div>
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <main class="p-8 relative z-10">
-        <!-- Welcome section -->
-        <section id="hero" class="text-center py-16 bg-gray-100">
-          <h1 class="text-4xl font-bold" id="typed-text"></h1>
-          <p class="mt-4">Keyner Mena • Computer Engineer</p>
-          <br />
-          <a id="btn-more" class="btn button redirect" name="about">
-            See more
-          </a>
-        </section>
+    <main class="max-w-5xl mx-auto px-6 pt-32 pb-24 space-y-32">
+      <section
+        id="hero"
+        class="min-h-[60vh] flex flex-col justify-center items-center animate-section"
+      >
+        <div id="hero-content"></div>
+      </section>
 
-        <!-- About me section -->
-        <section id="about" class="my-16 flex terminal-loader">
-          <div class="terminal-header">
-            <div class="terminal-title"></div>
-            <div class="terminal-controls">
-              <div class="control close"></div>
-              <div class="control minimize"></div>
-              <div class="control maximize"></div>
-            </div>
-          </div>
-          <div class="text-block">
-            <h2 class="text-2xl font-bold">About Me</h2>
-            <p class="subtittle">
-              <img class="logo" src="./images/graduate.png" alt="" /> Graduated
-              in Computer Engineering
-            </p>
-            <br />
-            <p class="mt-4">
-              My name is Keyner Mena. I'm from Costa Rica and I got into this
-              area in 2020, when I started learning the basics of web
-              development in high school. Since then, I have discovered that I
-              really like software development and design to create quality
-              apps. I consider myself a passionate developer with a love for
-              coding and learning.
-              <br />
-              <br />
-              I'm experienced in microservices, designing backend APIs, data
-              models, and secure authentication mechanisms, as well as building
-              maintainable frontend components using .NET, Node.js, Vue.js, and
-              Quasar.
-            </p>
-            <br />
-            <a
-              id="btn-resume"
-              class="neon-button"
-              href="https://drive.google.com/file/d/1JC77rEgC2QuiPHeZw5OWoqn4BaCm8V9a/view?usp=sharing"
-              target="_blank"
-              rel="noopener"
-            >
-              View resume
-              <img class="logo" src="./images/open.png" alt="open-icon" />
-            </a>
-          </div>
-          <div class="info">
-            <img
-              id="photo"
-              src="./images/photo.jpg"
-              alt="photo"
-              class="photo"
-            />
-            <a
-              class="neon-button"
-              href="https://drive.google.com/file/d/1JC77rEgC2QuiPHeZw5OWoqn4BaCm8V9a/view?usp=sharing"
-              target="_blank"
-              rel="noopener"
-            >
-              View resume
-              <img class="logo" src="./images/open.png" alt="open-icon" />
-            </a>
-          </div>
-        </section>
+      <section id="about" class="animate-section">
+        <h2
+          class="text-2xl font-medium text-white mb-8 flex items-center gap-2"
+        >
+          <i data-lucide="user" class="w-5 h-5 text-gray-400"></i>
+          <span id="heading-about">About me</span>
+        </h2>
+        <div id="about-content"></div>
+      </section>
 
-        <!-- Studies section -->
-        <section id="studies" class="my-16 terminal-loader">
-          <div class="terminal-header">
-            <div class="terminal-title"></div>
-            <div class="terminal-controls">
-              <div class="control close"></div>
-              <div class="control minimize"></div>
-              <div class="control maximize"></div>
-            </div>
-          </div>
+      <section id="experience" class="animate-section">
+        <h2
+          class="text-2xl font-medium text-white mb-8 flex items-center gap-2"
+        >
+          <i data-lucide="briefcase" class="w-5 h-5 text-gray-400"></i>
+          <span id="heading-experience">Experience</span>
+        </h2>
+        <div id="experience-list" class="space-y-6"></div>
+      </section>
 
-          <h2 class="text-2xl font-bold">Academic training</h2>
-          <h5 class="text-2xl section-header">
-            The main degrees/certificates that I have are:
-          </h5>
-          <br />
-          <br />
-          <p class="subtittle">
-            <img class="logo" src="./images/clicking.png" alt="" />Click on them
-            for more details
-          </p>
+      <section id="skills" class="animate-section">
+        <h2
+          class="text-2xl font-medium text-white mb-8 flex items-center gap-2"
+        >
+          <i data-lucide="cpu" class="w-5 h-5 text-gray-400"></i>
+          <span id="heading-skills">Technical Skills</span>
+        </h2>
+        <div
+          id="skills-list"
+          class="grid grid-cols-2 md:grid-cols-4 gap-4"
+        ></div>
+      </section>
 
-          <!-- Studies cards -->
-          <div class="studies_cards">
-            <div class="studies_card">
-              <div class="icon">
-                <img class="logo" src="./images/student.png" alt="" />
-              </div>
-              <strong> Bachelor's Degree in Computer Engineering </strong>
-              <div class="studies_card_body">
-                Universidad Florencio del Castillo
-              </div>
-              <span>Completed on: Dec, 2024</span>
-            </div>
+      <section id="education" class="animate-section">
+        <h2
+          class="text-2xl font-medium text-white mb-8 flex items-center gap-2"
+        >
+          <i data-lucide="graduation-cap" class="w-5 h-5 text-gray-400"></i>
+          <span id="heading-education">Education</span>
+        </h2>
+        <div id="education-list" class="space-y-6"></div>
+      </section>
 
-            <div class="studies_card">
-              <div class="icon">
-                <img class="logo" src="./images/certificate.png" alt="" />
-              </div>
-              <strong> Web development: HTML, CSS </strong>
-              <div class="studies_card_body">Platform: Google Activate</div>
-              <span>Completed on: Oct, 2024</span>
-            </div>
+      <section id="certifications" class="animate-section">
+        <h2
+          class="text-2xl font-medium text-white mb-8 flex items-center gap-2"
+        >
+          <i data-lucide="award" class="w-5 h-5 text-gray-400"></i>
+          <span id="heading-certifications">Certifications</span>
+        </h2>
+        <div
+          id="certifications-list"
+          class="relative w-full max-w-4xl mx-auto"
+        ></div>
+      </section>
 
-            <div class="studies_card">
-              <div class="icon">
-                <img class="logo" src="./images/certificate.png" alt="" />
-              </div>
-              <strong> Certificate course: AI for Life and Work </strong>
-              <div class="studies_card_body">Platform: Silicon Valley</div>
-              <span>Completed on: Oct, 2025</span>
-            </div>
-
-            <div class="studies_card">
-              <div class="icon">
-                <img class="logo" src="./images/language-learning.png" alt="" />
-              </div>
-              <strong> Linguistic proficiency in English </strong>
-              <div class="studies_card_body">Universidad de Costa Rica</div>
-              <span>Completed on: Oct, 2021</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- Experience section -->
-        <section id="experience" class="my-16 terminal-loader">
-          <div class="terminal-header">
-            <div class="terminal-title"></div>
-            <div class="terminal-controls">
-              <div class="control close"></div>
-              <div class="control minimize"></div>
-              <div class="control maximize"></div>
-            </div>
-          </div>
-
-          <h2 class="text-2xl font-bold">Experience</h2>
-          <h5 class="text-2xl section-header">My professional journey:</h5>
-          <br />
-          <br />
-
-          <!-- Experience Timeline -->
-          <div class="timeline">
-            <div class="timeline-container left">
-              <div class="timeline-content">
-                <h3>Fullstack Developer Jr</h3>
-                <h5>J&G Solutions</h5>
-                <p>
-                  I work on the development and maintenance of key modules for
-                  an occupational health platform using .NET, Node.js, Vue, and
-                  Quasar. I improved authentication, validations, performance,
-                  UI/UX, and security flows, including password recovery,
-                  session management, and bulk processes with Excel. I actively
-                  contribute to system stability alongside the QA team and the
-                  agile cycle using Azure DevOps.
-                </p>
-                <small>May 2025 - Present</small>
-
-                <button class="btn-expand" onclick="toggleDetails(this)">
-                  Show details <i class="fas fa-chevron-down"></i>
-                </button>
-
-                <div class="timeline-details">
-                  <h4>Key Achievements</h4>
-                  <ul>
-                    <li>
-                      Integration of the TiloPay payment gateway with end-to-end
-                      testing to enable electronic payments within the platform.
-                    </li>
-                    <li>
-                      Product Innovation: Building AI-powered solutions that
-                      solve complex business problems with focus on scalability
-                      and user experience
-                    </li>
-                  </ul>
-
-                  <h4>Tech Stack</h4>
-                  <div class="tech-stack-container">
-                    <span class="tech-item">Node</span>
-                    <span class="tech-item">VueJS</span>
-                    <span class="tech-item">Quasar Framework</span>
-                    <span class="tech-item">.NET</span>
-                    <span class="tech-item">SQL Server</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-container right">
-              <div class="timeline-content">
-                <h3>Intern</h3>
-                <h5>J&G Solutions</h5>
-                <p>
-                  I participated in the development of a clinical management
-                  system by creating frontend components, validations, PDF
-                  flows, and secure storage in Azure Blob Storage. I implemented
-                  digital signatures, document management, and dynamic reports,
-                  as well as collaborating in the agile process with tasks,
-                  meetings, and deployments in Azure DevOps.
-                </p>
-                <small>Nov 2024 - Abr 2025</small>
-
-                <button class="btn-expand" onclick="toggleDetails(this)">
-                  Show details <i class="fas fa-chevron-down"></i>
-                </button>
-
-                <div class="timeline-details">
-                  <h4>Key Achievements</h4>
-                  <ul>
-                    <li>
-                      Frontend Architecture: Designed and implemented scalable
-                      frontend architecture using VueJS and Quasar
-                    </li>
-                    <li>
-                      Design of complete flows for templates, PDF generation,
-                      printing, and cloud storage.
-                    </li>
-                  </ul>
-
-                  <h4>Tech Stack</h4>
-                  <div class="tech-stack-container">
-                    <span class="tech-item">Azure Blob Storage</span>
-                    <span class="tech-item"> Azure DevOps</span>
-                    <span class="tech-item">JavaScript</span>
-                    <span class="tech-item">C#</span>
-                    <span class="tech-item">Git</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-container left">
-              <div class="timeline-content">
-                <h3>Freelance</h3>
-                <h5>Independent</h5>
-                <p>
-                  I developed full-stack web projects for learning and practice,
-                  building APIs, dynamic interfaces, and complete applications
-                  with PHP, Node.js, JavaScript, and Angular. I implemented
-                  CRUDs, e-commerce, personal systems, and prototypes in Figma,
-                  strengthening my technical skills and my ability to learn
-                  independently.
-                </p>
-                <small>Jun 2023 - Oct 2024</small>
-
-                <button class="btn-expand" onclick="toggleDetails(this)">
-                  Show details <i class="fas fa-chevron-down"></i>
-                </button>
-
-                <div class="timeline-details">
-                  <h4>Key Achievements</h4>
-                  <ul>
-                    <li>
-                      Full Stack Development: Contributed to both frontend and
-                      backend development of core product features
-                    </li>
-                    <li>
-                      API Development: Developed RESTful APIs using JQuery and
-                      PHP
-                    </li>
-                  </ul>
-
-                  <h4>Tech Stack</h4>
-                  <div class="tech-stack-container">
-                    <span class="tech-item">PHP</span>
-                    <span class="tech-item">Bootstrap</span>
-                    <span class="tech-item">Angular</span>
-                    <span class="tech-item">PHPMyAdmin</span>
-                    <span class="tech-item">JQuery</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Projects section -->
-        <section id="projects" class="my-16 terminal-loader">
-          <div class="terminal-header">
-            <div class="terminal-title"></div>
-            <div class="terminal-controls">
-              <div class="control close"></div>
-              <div class="control minimize"></div>
-              <div class="control maximize"></div>
-            </div>
-          </div>
-          <h2 class="text-2xl font-bold">My Projects</h2>
-          <h5 class="text-2xl section-header">Personal projects</h5>
-          <div class="mt-5">
-            <p>
-              I have experience in the development of apps/websites and I've
-              dedicated myself to a variety of intriguing projects that span
-              different domains and also technologies. Here are some of the
-              projects I’ve been working on. Feel free to explore them on my
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://github.com/Keyner-Mena"
-                >GitHub profile</a
-              >
-              for a closer look at the code and documentation :)
-            </p>
-
-            <div
-              id="carouselExample"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <p class="advice" id="advice_projects">
-                <img class="logo" src="./images/swap.png" alt="" />
-                <strong>Scroll sideways to see more</strong>
-              </p>
-              <div class="carousel-inner" id="carousel-content">
-                <!-- Cards will be here-->
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <hr />
-            <div class="item-hints">
-              <div class="hint" data-position="4">
-                <span class="hint-radius"></span>
-                <span class="hint-dot">!</span>
-                <div class="hint-content do--split-children">
-                  <p>
-                    All the content of the repositories is in Spanish for the
-                    moment.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <hr />
-          </div>
-        </section>
-
-        <!-- Skills section -->
-        <section id="skills" class="my-16 terminal-loader">
-          <div class="terminal-header">
-            <div class="terminal-title"></div>
-            <div class="terminal-controls">
-              <div class="control close"></div>
-              <div class="control minimize"></div>
-              <div class="control maximize"></div>
-            </div>
-          </div>
-          <h2 class="text-2xl font-bold">Skills</h2>
-          <h5 class="text-2xl section-header">Main Technical Skills:</h5>
-          <br />
-          <br />
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="skills-content">
-                <h3 class="mt-4">Frontend</h3>
-                <hr />
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/html.png" alt="" />
-                    HTML
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/css.png" alt="" />
-                    CSS
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/js.png" alt="" />
-                    JavaScript
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/angular.png" alt="" />
-                    Angular
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/bootstrap.png" alt="" />
-                    Bootstrap
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="skills-content">
-                <h3 class="mt-4">Backend</h3>
-                <hr />
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/python.png" alt="" /> Python
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/php.png" alt="" />PHP
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/java.png" alt="" />Java
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/c-sharp.png" alt="" />C#
-                  </li>
-                  <li class="list-group-item">
-                    <img
-                      class="logo"
-                      src="./images/visual-basic.png"
-                      alt=""
-                    />Visual Basic
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="skills-content">
-                <h3 class="mt-4">Tools</h3>
-                <hr />
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/git.png" alt="" />
-                    Git
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/postman.png" alt="" />
-                    Postman
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/azure.png" alt="" />
-                    Azure DevOps
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/docker.png" alt="" />
-                    Docker
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="skills-content">
-                <h3 class="mt-4">Databases</h3>
-                <hr />
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/mysql.png" alt="" />
-                    MySQL
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/sql-server.png" alt="" />
-                    SQL Server
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/sqldeveloper.png" alt="" />
-                    SQL Developer
-                  </li>
-                  <li class="list-group-item">
-                    <img class="logo" src="./images/phpmyadmin.png" alt="" />
-                    PHPMyAdmin
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+      <section id="projects" class="animate-section">
+        <h2
+          class="text-2xl font-medium text-white mb-8 flex items-center gap-2"
+        >
+          <i data-lucide="folder-git-2" class="w-5 h-5 text-gray-400"></i>
+          <span id="heading-projects">Featured Projects</span>
+        </h2>
+        <div
+          id="projects-list"
+          class="grid grid-cols-1 md:grid-cols-2 gap-6"
+        ></div>
+      </section>
+    </main>
 
     <footer
       id="contact"
-      class="text-center py-4 bg-gray-800 text-white relative z-10"
+      class="border-t border-white/10 bg-black/20 backdrop-blur-md"
     >
       <div
-        class="container py-5 d-flex flex-column align-items-center justify-content-center gap-4"
+        class="max-w-5xl mx-auto px-6 py-12 flex flex-col items-center justify-center space-y-6"
       >
-        <h3 class="text-2xl font-bold">Let's work together</h3>
-        <h5>
-          If you are interested in collaborating or have any questions, feel
-          free to contact me.
-        </h5>
-
-        <br />
-        <div
-          id="social-links"
-          class="d-flex gap-4 flex-wrap justify-content-center"
-        >
-          <a
-            href="mailto:keynermena896@gmail.com"
-            target="_blank"
-            class="neon-button"
-          >
-            <img
-              src="./images/gmail.png"
-              alt="Gmail Logo"
-              class="logo"
-              style="margin-right: 0px"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/keyner-mena"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="neon-button"
-          >
-            <img
-              src="./images/linkedin.png"
-              alt="LinkedIn Logo"
-              class="logo"
-              style="margin-right: 0px"
-            />
-          </a>
-        </div>
-        <p class="text-xs text-gray-500 mt-8">
+        <h2 id="footer-title" class="text-2xl font-medium text-white">
+          Let's work together
+        </h2>
+        <p id="footer-description" class="text-gray-400 text-center max-w-md">
+          If you are interested in collaborating or have any questions, do not
+          hesitate to contact me.
+        </p>
+        <div id="social-links" class="flex gap-4"></div>
+        <p id="footer-copyright" class="text-sm text-gray-600 mt-8 text-center">
           &copy; 2026 Keyner Mena C. All rights reserved.
         </p>
       </div>
     </footer>
 
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Particles -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./scripts/particles-config.js"></script>
-
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Typed Text -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="./scripts/functions.js"></script>
-
-    <!-- Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
