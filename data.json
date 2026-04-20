@@ -325,6 +325,15 @@
     },
     {
       "title": {
+        "en": "Web Development",
+        "es": "Desarrollo web"
+      },
+      "issuer": "Google",
+      "year": "2024",
+      "image": "images/cert-web-development.webp"
+    },
+    {
+      "title": {
         "en": "100 AI Terms",
         "es": "100 términos de IA"
       },
@@ -342,13 +351,10 @@
       "image": "images/cert-ai-for-life.webp"
     },
     {
-      "title": {
-        "en": "Web Development",
-        "es": "Desarrollo web"
-      },
-      "issuer": "Google",
-      "year": "2024",
-      "image": "images/cert-web-development.webp"
+      "title": "Python",
+      "issuer": "Daxus Latam",
+      "year": "2026",
+      "image": "images/cert-python.webp"
     },
     {
       "title": {
@@ -361,6 +367,15 @@
       },
       "year": "2025",
       "image": "images/cert-cybersecurity.webp"
+    },
+    {
+      "title": {
+        "en": "Ethical Hacking",
+        "es": "Hacking Ético"
+      },
+      "issuer": "BIG School",
+      "year": "2026",
+      "image": "images/cert-ethical-hacking.webp"
     },
     {
       "title": "Power BI + AI",
