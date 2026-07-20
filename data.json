@@ -128,8 +128,8 @@
     "stats": [
       {
         "value": {
-          "en": "+2 Years",
-          "es": "+2 años"
+          "en": "+3 Years",
+          "es": "+3 años"
         },
         "label": {
           "en": "of Experience",
@@ -166,8 +166,8 @@
       },
       "company": "J and G Solutions",
       "period": {
-        "en": "May 2025 - Dec 2025",
-        "es": "May 2025 - Dic 2025"
+        "en": "Nov 2024 - Jun 2026",
+        "es": "Nov 2024 - Jun 2026"
       },
       "description": {
         "en": "Developed full-stack features for PuraVidaSafety (Occupational Health and Safety Platform) using .NET, Node.js, Vue.js, Quasar, and SQL Server. Designed backend APIs with JWT authentication and role-based access control. Integrated TiloPay payment gateway, implemented security improvements, Excel import/export functionality, and migrated Node.js and Quasar dependencies.",
@@ -196,8 +196,8 @@
       },
       "company": "J and G Solutions",
       "period": {
-        "en": "Nov 2024 - May 2025",
-        "es": "Nov 2024 - May 2025"
+        "en": "Jun 2024 - Nov 2024",
+        "es": "Jun 2024 - Nov 2024"
       },
       "description": {
         "en": "Worked on FisioFile (Clinical Records System) developing frontend components with Vue.js and Quasar. Implemented digital signature functionality, PDF generation workflows, Azure Blob Storage integration, and backend logic for document management.",
@@ -325,12 +325,30 @@
     },
     {
       "title": {
+        "en": "AI Agents",
+        "es": "Agentes de IA"
+      },
+      "issuer": "BIG School",
+      "year": "2026",
+      "image": "images/cert-ai-agents.webp"
+    },
+    {
+      "title": {
         "en": "Web Development",
         "es": "Desarrollo web"
       },
       "issuer": "Google",
       "year": "2024",
       "image": "images/cert-web-development.webp"
+    },
+    {
+      "title": {
+        "en": "AI Immersion",
+        "es": "Inmersión IA"
+      },
+      "issuer": "Daxus Latam",
+      "year": "2026",
+      "image": "images/cert-ai-immersion.webp"
     },
     {
       "title": {
@@ -384,6 +402,12 @@
       "image": "images/cert-power-bi.webp"
     },
     {
+      "title": "Power BI",
+      "issuer": "Hazlo con Power BI",
+      "year": "2026",
+      "image": "images/cert-power-bi-2.webp"
+    },
+    {
       "title": {
         "en": "Microsoft Excel Specialized",
         "es": "Microsoft Excel especializado"
@@ -394,6 +418,15 @@
       },
       "year": "2025",
       "image": "images/cert-excel.webp"
+    },
+    {
+      "title": {
+        "en": "Excel Marathon",
+        "es": "Maratón Excel"
+      },
+      "issuer": "SmartPro",
+      "year": "2026",
+      "image": "images/cert-excel-marathon.webp"
     }
   ],
   "projects": [
